@@ -87,7 +87,15 @@
     <!-- Package as an executable jar  -->
     <build>
         <finalName>JenkinsDemo</finalName>
-
+        <!--resources配置解决mybatis 的mapperXml配置在java路径不被扫描的问题 -->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
         <!-- 打包插件  mvn package -->
         <plugins>
             <plugin>
