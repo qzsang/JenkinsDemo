@@ -86,6 +86,7 @@
 
     <!-- Package as an executable jar  -->
     <build>
+        <finalName>JenkinsDemo</finalName>
 
         <!-- 打包插件  mvn package -->
         <plugins>
